@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import LogoHorizontal from "@/app/assets/brand/logo-green-horizontal.png";
+import LogoIcon from "@/app/assets/brand/logo-green-icon.png";
 import { BiMenu, BiX } from "react-icons/bi";
 import { useState } from "react";
 
@@ -17,24 +18,24 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white w-full max-sm:h-[55px] max-sm:px-[15px] lg:h-[6.25rem] lg:px-[160px] flex justify-center font-medium">
-      <div className="w-full justify-between flex items-center lg:gap-[100px]">
+    <header className="bg-white w-full sm:px-[15px] sm:h-[55px] md:h-[100px] lg:h-[6.25rem] lg:px-[160px] flex justify-center items-center font-medium">
+      <div className="w-full flex justify-between items-center ">
         <button
-          className="max-sm:block hidden outline-none p-1 focus:bg-neutral-rich-black focus:bg-opacity-20 rounded-full"
+          className="sm:hidden outline-none p-1 focus:bg-neutral-rich-black focus:bg-opacity-20 rounded-full"
           onClick={toggleMenu}
         >
           <BiMenu className="text-secondary-cadmium-green w-[24px] h-[24px]" />
         </button>
-        <div>
+        <div className="flex">
           <Link href={"/"}>
             <Image
               alt="Logo da Willy Academy Verde no Sentido Horizontal."
               src={LogoHorizontal}
-              className="lg:w-[219px] max-sm:w-[100px]"
+              className="max-lg:w-[219px] lg:min-w-[200px] sm:w-[90px] max-sm:w-[100px] md:w-[160px]"
             />
           </Link>
         </div>
-        <nav className="max-sm:hidden flex lg:gap-[88px] whitespace-nowrap justify-around text-neutral-rich-black text-small lg:max-w-[804px]">
+        <nav className="hidden sm:text-sm-small md:text-small lg:text-small whitespace-nowrap sm:flex items-center lg:gap-[40px] gap-5 text-neutral-rich-black">
           <Link
             href={"#"}
             className="transition-all hover:underline hover:opacity-85"
@@ -60,18 +61,18 @@ export default function Header() {
             Sobre Nós
           </Link>
         </nav>
-        <div>
+        <div className="hidden sm:block">
           <Link href={"#"}>
-            <button className="bg-secondary-cadmium-green max-sm:text-sm-normal max-sm:w-[105px] max-sm:h-[30px] transition-all hover:scale-105 hover:bg-selected-secondary font-semi-bold uppercase lg:text-normal rounded-normal text-primary-duch-white lg:w-[350px] lg:h-[65px]">
+            <button className="bg-secondary-cadmium-green lg:w-[320px] w-[130px] md:w-[164px] h-[30px] md:h-[45px] lg:h-[65px] transition-all hover:scale-105 hover:bg-selected-secondary font-semi-bold uppercase lg:text-normal rounded-normal text-primary-duch-white">
               Acesse
             </button>
           </Link>
         </div>
       </div>
       {menuOpen && (
-        <div className="fixed px-[20px] inset-0 bg-neutral-bright-gray z-50 flex flex-col items-center justify-center">
+        <div className="fixed inset-0 bg-neutral-bright-gray z-50 flex flex-col items-center justify-center p-4">
           <button
-            className="absolute top-4 right-10 outline-none p-1 focus:bg-neutral-rich-black focus:bg-opacity-20 rounded-full"
+            className="absolute top-4 right-4 outline-none p-1 focus:bg-neutral-rich-black focus:bg-opacity-20 rounded-full"
             onClick={closeMenu}
           >
             <BiX className="text-secondary-cadmium-green w-[24px] h-[24px]" />
@@ -88,6 +89,11 @@ export default function Header() {
             </Link>
             <Link href={"#"} onClick={closeMenu}>
               Sobre Nós
+            </Link>
+            <Link href={"#"} onClick={closeMenu} className="mt-4">
+              <button className="bg-secondary-cadmium-green w-[160px] h-[45px] transition-all hover:scale-105 hover:bg-selected-secondary font-semi-bold uppercase text-normal rounded-normal text-primary-duch-white">
+                Acesse
+              </button>
             </Link>
           </nav>
         </div>

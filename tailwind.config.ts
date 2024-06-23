@@ -27,6 +27,10 @@ const config: Config = {
         "sm-subtitle": "18px",
         "sm-normal": "12px",
         "sm-small": "9px",
+        "md-title": "22px",
+        "md-subtitle": "19px",
+        "md-normal": "17px",
+        "md-small": "13px",
       },
       fontWeight: {
         normal: "500",
