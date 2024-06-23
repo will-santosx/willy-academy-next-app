@@ -30,7 +30,7 @@ export default function Header() {
             <Image
               alt="Logo da Willy Academy Verde no Sentido Horizontal."
               src={LogoHorizontal}
-              className="lg:w-[219px] max-sm:w-[120px]"
+              className="lg:w-[219px] max-sm:w-[100px]"
             />
           </Link>
         </div>
