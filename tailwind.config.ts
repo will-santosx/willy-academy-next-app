@@ -19,10 +19,14 @@ const config: Config = {
         },
       },
       fontSize: {
-        "title-text": "40px",
-        "subtitle-text": "32px",
-        "normal-text": "24px",
-        "small-text": "20px",
+        title: "40px",
+        subtitle: "32px",
+        normal: "24px",
+        small: "20px",
+        "sm-title": "20px",
+        "sm-subtitle": "18px",
+        "sm-normal": "12px",
+        "sm-small": "9px",
       },
       fontWeight: {
         normal: "500",
