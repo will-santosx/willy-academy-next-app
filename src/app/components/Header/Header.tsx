@@ -9,7 +9,7 @@ export default function Header() {
         <div>
           <Link href={"/"}>
             <Image
-              alt="Logo da Willy Academy no Sentido Horizontal."
+              alt="Logo da Willy Academy Verde no Sentido Horizontal."
               src={LogoHorizontal}
               className="lg:w-[219px]"
             />
@@ -42,9 +42,11 @@ export default function Header() {
           </Link>
         </nav>
         <div>
-          <button className="bg-secondary-cadmium-green transition-all hover:border-neutral-bright-gray hover:border-opacity-20 border-[5px] border-transparent font-semi-bold uppercase lg:text-normal-text rounded-normal text-primary-duch-white lg:w-[350px] lg:h-[65px]">
-            Já sou aluno &#40;a&#41;
-          </button>
+          <Link href={"#"}>
+            <button className="bg-secondary-cadmium-green transition-all hover:border-neutral-bright-gray hover:border-opacity-20 border-[5px] border-transparent font-semi-bold uppercase lg:text-normal-text rounded-normal text-primary-duch-white lg:w-[350px] lg:h-[65px]">
+              Já sou aluno &#40;a&#41;
+            </button>
+          </Link>
         </div>
       </div>
     </header>
