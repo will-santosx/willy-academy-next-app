@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         "primary-duch-white": "#F1DABF",
         "secondary-cadmium-green": "#00663C",
+        "tertiary-bright-green": "#4CA580",
         "neutral-rich-black": "#001011",
         "neutral-bright-gray": "#EEF1EF",
       },
@@ -18,12 +19,16 @@ const config: Config = {
         "title-text": "40px",
         "subtitle-text": "32px",
         "normal-text": "24px",
+        "small-text": "20px",
       },
       fontWeight: {
         normal: "500",
         "semi-bold": "600",
         "normal-bold": "700",
         "extra-bold": "800",
+      },
+      borderRadius: {
+        normal: "10px",
       },
     },
   },
