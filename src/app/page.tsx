@@ -1,7 +1,8 @@
-import TopGreenBanner from "@/app/assets/images/top-green-banner.png";
-import LogoIcon from "@/app/assets/brand/logo-primary-icon.png";
 import Image from "next/image";
 import { BiBrain, BiLaptop, BiTrendingUp, BiTrophy } from "react-icons/bi";
+import TopGreenBanner from "@/app/assets/images/top-green-banner.png";
+import LogoIcon from "@/app/assets/brand/logo-primary-icon.png";
+import { FeatureCard } from "./components/FeatureCards/FeatureCards";
 
 export default function LandingHome() {
   return (
@@ -21,7 +22,7 @@ export default function LandingHome() {
           </div>
           <p className="lg:max-w-[602px] text-normal-text">
             Na Willy Academy, acreditamos que seu <b>esforço</b> merece
-            <b>resultados tangíveis</b>. Descubra como podemos ajudá-lo a{" "}
+            <b> resultados tangíveis</b>. Descubra como podemos ajudá-lo a{" "}
             <b>transformar seu potencial</b> em conquistas reais.
           </p>
         </div>
@@ -29,6 +30,7 @@ export default function LandingHome() {
           Eu Quero!
         </button>
       </section>
+
       <section className="bg-neutral-bright-gray w-full flex lg:gap-[120px] flex-col justify-center text-neutral-rich-black lg:px-[266.5px]">
         <div className="w-full flex items-center flex-col lg:gap-[13px]">
           <h1 className="font-bold text-title-text text-center lg:max-w-[1152px] uppercase">
@@ -43,74 +45,33 @@ export default function LandingHome() {
           </p>
         </div>
         <div className="flex flex-col items-center lg:gap-[35px]">
-          <div className="bg-neutral-rich-black bg-opacity-20 lg:w-[905px] lg:h-[292px] lg:gap-[50px] lg:px-[16px] lg:py-[38px] justify-center rounded-normal flex">
-            <h1 className="text-[144px] text-secondary-cadmium-green font-black">
-              1.
-            </h1>
-            <div>
-              <div className="text-secondary-cadmium-green flex items-center lg:gap-[20px]">
-                <BiLaptop className="lg:w-[120px] lg:h-[120px]" />
-                <h2 className="font-bold text-title-text">
-                  Tecnologia Avançada
-                </h2>
-              </div>
-              <p className="text-normal-text font-medium text-neutral-rich-black lg:w-[666px]">
-                Utilizamos tecnologia avançada para oferecer uma experiência de
-                estudo intuitiva e eficaz.
-              </p>
-            </div>
-          </div>
-          <div className="bg-neutral-rich-black bg-opacity-20 lg:w-[905px] lg:h-[292px] lg:gap-[50px] lg:px-[16px] lg:py-[38px] justify-center rounded-normal flex">
-            <h1 className="text-[144px] text-secondary-cadmium-green font-black">
-              2.
-            </h1>
-            <div>
-              <div className="text-secondary-cadmium-green flex items-center lg:gap-[20px]">
-                <BiTrophy className="lg:w-[120px] lg:h-[120px]" />
-                <h2 className="font-bold text-title-text">
-                  Feedback Personalizado
-                </h2>
-              </div>
-              <p className="text-normal-text font-medium text-neutral-rich-black lg:w-[666px]">
-                Nossa plataforma fornece feedback personalizado para ajudá-lo a
-                identificar e superar suas áreas de dificuldade.
-              </p>
-            </div>
-          </div>
-          <div className="bg-neutral-rich-black bg-opacity-20 lg:w-[905px] lg:h-[292px] lg:gap-[50px] lg:px-[16px] lg:py-[38px] justify-center rounded-normal flex">
-            <h1 className="text-[144px] text-secondary-cadmium-green font-black">
-              3.
-            </h1>
-            <div>
-              <div className="text-secondary-cadmium-green flex items-center lg:gap-[20px]">
-                <BiBrain className="lg:w-[120px] lg:h-[120px]" />
-                <h2 className="font-bold text-title-text">
-                  Recursos Adaptativos
-                </h2>
-              </div>
-              <p className="text-normal-text font-medium text-neutral-rich-black lg:w-[666px]">
-                Oferecemos recursos adaptativos que se ajustam ao seu estilo de
-                aprendizado e ritmo de estudo.
-              </p>
-            </div>
-          </div>
-          <div className="bg-neutral-rich-black bg-opacity-20 lg:w-[905px] lg:h-[292px] lg:gap-[50px] lg:px-[16px] lg:py-[38px] justify-center rounded-normal flex">
-            <h1 className="text-[144px] text-secondary-cadmium-green font-black">
-              4.
-            </h1>
-            <div>
-              <div className="text-secondary-cadmium-green flex items-center lg:gap-[20px]">
-                <BiTrendingUp className="lg:w-[120px] lg:h-[120px]" />
-                <h2 className="font-bold text-title-text">Seus Resultados</h2>
-              </div>
-              <p className="text-normal-text font-medium text-neutral-rich-black lg:w-[666px]">
-                Acompanhe seu progresso e desempenho em tempo real com nossas
-                ferramentas de monitoramento avançadas.
-              </p>
-            </div>
-          </div>
+          <FeatureCard
+            number="1"
+            icon={<BiLaptop className="lg:w-[120px] lg:h-[120px]" />}
+            title="Tecnologia Avançada"
+            description="Utilizamos tecnologia avançada para oferecer uma experiência de estudo intuitiva e eficaz."
+          />
+          <FeatureCard
+            number="2"
+            icon={<BiTrophy className="lg:w-[120px] lg:h-[120px]" />}
+            title="Feedback Personalizado"
+            description="Nossa plataforma fornece feedback personalizado para ajudá-lo a identificar e superar suas áreas de dificuldade."
+          />
+          <FeatureCard
+            number="3"
+            icon={<BiBrain className="lg:w-[120px] lg:h-[120px]" />}
+            title="Recursos Adaptativos"
+            description="Oferecemos recursos adaptativos que se ajustam ao seu estilo de aprendizado e ritmo de estudo."
+          />
+          <FeatureCard
+            number="4"
+            icon={<BiTrendingUp className="lg:w-[120px] lg:h-[120px]" />}
+            title="Seus Resultados"
+            description="Acompanhe seu progresso e desempenho em tempo real com nossas ferramentas de monitoramento avançadas."
+          />
         </div>
       </section>
+
       <section className="w-full flex flex-col items-center justify-center bg-secondary-cadmium-green lg:h-[602px] lg:px-[266.5px]">
         <div className="lg:w-full lg:h-[518px] lg:px-[58px] flex justify-between items-center">
           <div className="text-neutral-bright-gray lg:max-w-[644px] flex lg:gap-[20px] flex-col">
