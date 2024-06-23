@@ -43,7 +43,7 @@ export default function Header() {
         </nav>
         <div>
           <Link href={"#"}>
-            <button className="bg-secondary-cadmium-green transition-all hover:border-neutral-bright-gray hover:border-opacity-20 border-[5px] border-transparent font-semi-bold uppercase lg:text-normal-text rounded-normal text-primary-duch-white lg:w-[350px] lg:h-[65px]">
+            <button className="bg-secondary-cadmium-green transition-all hover:scale-105 hover:bg-selected-secondary font-semi-bold uppercase lg:text-normal-text rounded-normal text-primary-duch-white lg:w-[350px] lg:h-[65px]">
               Já sou aluno &#40;a&#41;
             </button>
           </Link>

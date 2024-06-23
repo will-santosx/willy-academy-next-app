@@ -25,7 +25,7 @@ export default function LandingHome() {
             <b>transformar seu potencial</b> em conquistas reais.
           </p>
         </div>
-        <button className="lg:w-[400px] lg:mt-[71px] lg:h-[80px] bg-primary-duch-white transition-all hover:scale-105 hover:bg-[#F4E2CE] text-secondary-cadmium-green rounded-normal font-semi-bold text-subtitle-text">
+        <button className="lg:w-[400px] lg:mt-[71px] lg:h-[80px] bg-primary-duch-white transition-all hover:scale-105 hover:bg-selected-primary text-secondary-cadmium-green rounded-normal font-semi-bold text-subtitle-text">
           Eu Quero!
         </button>
       </section>

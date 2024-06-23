@@ -11,9 +11,12 @@ const config: Config = {
       colors: {
         "primary-duch-white": "#F1DABF",
         "secondary-cadmium-green": "#00663C",
-        "tertiary-bright-green": "#4CA580",
         "neutral-rich-black": "#001011",
         "neutral-bright-gray": "#EEF1EF",
+        selected: {
+          primary: "#F4E2CE",
+          secondary: "#00A05E",
+        },
       },
       fontSize: {
         "title-text": "40px",
