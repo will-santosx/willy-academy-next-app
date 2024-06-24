@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --color-secondary-green: #00663C;
+}
+
+a.nav-links {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+a.nav-links:before, a.nav-links:after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid var(--color-secondary-green);
+    border-radius: 1em;
+    bottom: 0;
+    transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a.nav-links:before {
+    width: 1em;
+    transform-origin: left;
+}
+
+a.nav-links:after {
+    width: 82%;
+    left: 1em;
+    transform: translateX(110%);
+}
+
+a.nav-links:hover:before {
+    transform: scaleX(0.3);
+}
+
+a.nav-links:hover:after {
+    transform: translateX(0);
+}
