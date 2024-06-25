@@ -41,6 +41,10 @@ const config: Config = {
       borderRadius: {
         normal: "10px",
       },
+      backgroundImage: {
+        "sm-top-image-banner": "url('./assets/images/top-banner-sm.png')",
+        "lg-top-image-banner": "url('./assets/images/top-banner-lg.png')",
+      },
     },
   },
   plugins: [],
