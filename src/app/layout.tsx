@@ -27,7 +27,6 @@ export default function RootLayout({
         <main className={poppins.className + " bg-neutral-bright-gray"}>
           {children}
         </main>
-        <Footer />
       </body>
     </html>
   );
