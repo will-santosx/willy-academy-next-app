@@ -6,6 +6,10 @@
     --color-secondary-green: #00663C;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 a.nav-links {
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);

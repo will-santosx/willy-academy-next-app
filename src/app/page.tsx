@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-full flex items-center flex-col">
-      <section className="xl:h-[685px] xl:px-[160px] xl:py-[60px] | sm:bg-lg-top-image-banner | sm:h-[430px] sm:justify-between sm:py-[40px] sm:px-[30px] | max-sm:items-center max-sm:justify-end max-sm:py-[20px] max-sm:gap-[30px] | | h-[470px] w-full flex flex-col bg-cover bg-center bg-sm-top-image-banner">
+    <main className="w-full flex items-center flex-col bg-neutral-bright-gray">
+      <section className="xl:h-[685px] xl:px-[167px] xl:py-[60px] | sm:bg-lg-top-image-banner | sm:h-[430px] sm:justify-between sm:py-[40px] sm:px-[30px] | max-sm:items-center max-sm:justify-end max-sm:py-[20px] max-sm:gap-[30px] | | h-[470px] w-full flex flex-col bg-cover bg-center bg-sm-top-image-banner">
         <div className="sm:justify-center sm:text-left sm:items-start sm:gap-[40px] | max-sm:gap-[20px] | lg:gap-[48px] | text-neutral-bright-gray flex flex-col items-center text-center justify-end">
           <div className="flex flex-col">
             <span className="xl:text-[40px] | max-sm:text-[24px] | sm:text-[24px] | font-extra-bold">
@@ -24,11 +24,28 @@ export default function Home() {
             <b>portas</b> para <b>novas oportunidades</b>.
           </p>
         </div>
-        <Link href={"#"}>
-          <button className="xl:w-[400px] xl:h-[80px] xl:text-[32px] | max-sm:w-[225px] max-sm:h-[40px] max-sm:text-[18px] | sm:w-[300px] sm:h-[60px] sm:text-[20px] | bg-primary-duch-white transition-all hover:scale-105 hover:bg-selected-primary text-secondary-cadmium-green rounded-normal font-semi-bold text-subtitle">
+        <Link
+          href={"#"}
+          className="xl:w-[400px] xl:h-[80px] max-sm:w-[225px] max-sm:h-[40px] sm:w-[300px] sm:h-[60px]"
+        >
+          <button className="h-full w-full xl:text-[32px] |  max-sm:text-[18px] |  sm:text-[20px] | bg-primary-duch-white transition-all hover:scale-105 hover:bg-selected-primary text-secondary-cadmium-green rounded-normal font-semi-bold text-subtitle">
             Eu Quero!
           </button>
         </Link>
+      </section>
+      <section className="xl:py-[70px] xl:px-[160px] |  | py-[40px] px-[15px] w-full text-neutral-rich-black">
+        <div className="xl:gap-[25px] | | gap-[30px] w-full flex flex-col items-center text-center">
+          <span className="xl:text-[40px] xl:max-w-[1150px] | md:text-[32px] | text-[24px] font-bold uppercase">
+            Por que a Willy Academy é a Escolha Certa para o Seu Sucesso
+            Acadêmico?
+          </span>
+          <p className="xl:w-[1150px] lg:text-[24px] | md:text-[18px] | text-[15px]">
+            Combinamos <b>tecnologia avançada</b>, <b>feedback personalizado</b>{" "}
+            e <b>recursos adaptativos</b> para oferecer uma{" "}
+            <b>experiência de estudo única</b>, focada em{" "}
+            <b>impulsionar o seu sucesso acadêmico</b>.
+          </p>
+        </div>
       </section>
     </main>
   );
