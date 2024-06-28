@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FeatureCard } from "./components/FeatureCards/FeatureCards";
+import { BiBrain, BiLaptop, BiTrendingUp, BiTrophy } from "react-icons/bi";
 
 export default function Home() {
   return (
@@ -45,6 +47,45 @@ export default function Home() {
             <b>experiência de estudo única</b>, focada em{" "}
             <b>impulsionar o seu sucesso acadêmico</b>.
           </p>
+        </div>
+      </section>
+      <section className="xl:px-[300px] | lg:px-[140px] | md:px-[120px] | sm:px-[100px] | px-[10px] py-[35px] gap-[35px] w-full flex flex-col items-center justify-start">
+        <h1 className="xl:text-[40px] | md:text-[32px] | sm:text-[28px] | text-neutral-rich-black text-[24px] font-bold">
+          Nosso Diferencial
+        </h1>
+        <div className="flex flex-col w-full gap-[35px] px-[15px]">
+          <FeatureCard
+            number="1"
+            icon={
+              <BiLaptop className="sm:w-[29px] sm:h-[29px] | md:w-[34px] md:h-[34px] | lg:w-[55px] lg:h-[55px] w-[25px] h-[25px]" />
+            }
+            title="Tecnologia Avançada"
+            description="Utilizamos tecnologia avançada para oferecer uma experiência de estudo intuitiva e eficaz."
+          />
+          <FeatureCard
+            number="2"
+            icon={
+              <BiTrophy className="sm:w-[29px] sm:h-[29px] | md:w-[34px] md:h-[34px] | lg:w-[55px] lg:h-[55px] w-[25px] h-[25px]" />
+            }
+            title="Feedback Individuais"
+            description="Oferecemos feedback personalizado para ajudá-lo a identificar e superar suas dificuldades."
+          />
+          <FeatureCard
+            number="3"
+            icon={
+              <BiBrain className="sm:w-[29px] sm:h-[29px] | md:w-[34px] md:h-[34px] | lg:w-[55px] lg:h-[55px] w-[25px] h-[25px]" />
+            }
+            title="Recursos Adaptativos"
+            description="Oferecemos recursos adaptativos que se ajustam ao seu estilo de aprendizado e ritmo de estudo."
+          />
+          <FeatureCard
+            number="4"
+            icon={
+              <BiTrendingUp className="sm:w-[29px] sm:h-[29px] | md:w-[34px] md:h-[34px] | lg:w-[55px] lg:h-[55px] w-[25px] h-[25px]" />
+            }
+            title="Seus Resultados"
+            description="Acompanhe seu progresso em tempo real com nossas ferramentas avançadas."
+          />
         </div>
       </section>
     </main>
