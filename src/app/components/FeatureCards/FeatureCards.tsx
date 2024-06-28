@@ -14,7 +14,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
 }) => {
   return (
-    <div className="sm:gap-[34px] sm:px-[20px] | md:gap-[38px] md:px-[24px] | lg:gap-[42px] lg:px-[30px] | xl:gap-[46px] xl:px-[36px] bg-neutral-rich-black bg-opacity-20 w-full h-140 gap-[30px] px-[16px] py-[20px] justify-center items-center rounded-normal flex">
+    <div className="sm:gap-[34px] sm:px-[20px] | md:gap-[38px] md:px-[24px] | lg:gap-[42px] lg:px-[30px] | xl:gap-[46px] xl:px-[36px] border-opacity-30 border border-neutral-rich-black bg-neutral-rich-black bg-opacity-20 w-full h-140 gap-[30px] px-[16px] py-[20px] justify-center items-center rounded-normal flex">
       <h1 className="lg:text-[72px] | md:text-[60px] | text-[48px] text-secondary-cadmium-green font-black">
         {number}.
       </h1>
