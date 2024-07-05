@@ -78,16 +78,16 @@ export default function Header() {
             <BiX className="text-secondary-cadmium-green w-[24px] h-[24px]" />
           </button>
           <nav className="flex flex-col items-center gap-6 text-neutral-rich-black text-sm-title">
-            <Link href={"#"} onClick={closeMenu}>
+            <Link href={"/user/questoes"} onClick={closeMenu}>
               Banco de questões
             </Link>
-            <Link href={"#"} onClick={closeMenu}>
+            <Link href={"/user/disciplinas"} onClick={closeMenu}>
               Disciplinas
             </Link>
-            <Link href={"#"} onClick={closeMenu}>
+            <Link href={"/user/meu-desempenho"} onClick={closeMenu}>
               Desempenho
             </Link>
-            <Link href={"#"} onClick={closeMenu}>
+            <Link href={"/user/sobre"} onClick={closeMenu}>
               Sobre Nós
             </Link>
           </nav>
