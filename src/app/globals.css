@@ -10,6 +10,14 @@ html {
     overflow-x: hidden;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+}
+
 a.nav-links {
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);

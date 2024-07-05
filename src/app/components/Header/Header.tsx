@@ -17,7 +17,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white w-[100vw] flex items-center font-medium | max-sm:px-[20px] max-sm:h-[55px] | sm:px-[20px] sm:h-[75px] | lg:px-[30px]">
+    <header className="bg-white w-[100vw] flex items-center justify-center font-medium | max-sm:px-[20px] max-sm:h-[55px] | sm:px-[20px] sm:h-[75px] | lg:px-[30px]">
       <div className="w-full flex items-center justify-around | max-sm:gap-[27px] | sm:gap-[130px]">
         <button
           className="lg:hidden | outline-none focus:bg-neutral-rich-black focus:bg-opacity-20 rounded-normal"
@@ -36,32 +36,32 @@ export default function Header() {
         </div>
         <nav className="lg:flex lg:gap-[20px] | xl:gap-[50px] | hidden  whitespace-nowrap items-center text-neutral-rich-black">
           <Link
-            href={"#"}
+            href={"/user/questoes"}
             className="transition-all nav-links pb-1 hover:text-black"
           >
             Banco de questões
           </Link>
           <Link
-            href={"#"}
+            href={"/user/disciplinas"}
             className="transition-all nav-links pb-1 hover:text-black"
           >
             Disciplinas
           </Link>
           <Link
-            href={"#"}
+            href={"/user/meu-desempenho"}
             className="transition-all nav-links pb-1 hover:text-black"
           >
             Desempenho
           </Link>
           <Link
-            href={"#"}
+            href={"/user/sobre"}
             className="transition-all nav-links pb-1 hover:text-black"
           >
             Sobre Nós
           </Link>
         </nav>
         <Link
-          href={"#"}
+          href={"/auth/cadastro"}
           className="max-sm:w-[105px] max-sm:h-[33px] | sm:w-[145px] sm:h-[42px] | lg:text-[19px] lg:w-[190px] | xl:text-[20px] xl:w-[190px] xl:h-[55px] | text-[16px]"
         >
           <button className="w-full h-full bg-secondary-cadmium-green transition-all hover:scale-105 hover:bg-selected-secondary font-semi-bold uppercase rounded-normal text-primary-duch-white">

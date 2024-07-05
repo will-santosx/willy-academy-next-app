@@ -13,6 +13,7 @@ const config: Config = {
         "secondary-cadmium-green": "#00663C",
         "neutral-rich-black": "#001011",
         "neutral-bright-gray": "#EEF1EF",
+        "input-error": "#FF5045",
         selected: {
           primary: "#F4E2CE",
           secondary: "#00A05E",
