@@ -36,32 +36,32 @@ export default function Header() {
         </div>
         <nav className="lg:flex lg:gap-[20px] | xl:gap-[50px] | hidden  whitespace-nowrap items-center text-neutral-rich-black">
           <Link
-            href={"/user/questoes"}
+            href={"/questoes"}
             className="transition-all nav-links pb-1 hover:text-black"
           >
             Banco de questões
           </Link>
           <Link
-            href={"/user/disciplinas"}
+            href={"/disciplinas"}
             className="transition-all nav-links pb-1 hover:text-black"
           >
             Disciplinas
           </Link>
           <Link
-            href={"/user/meu-desempenho"}
+            href={"/meu-desempenho"}
             className="transition-all nav-links pb-1 hover:text-black"
           >
             Desempenho
           </Link>
           <Link
-            href={"/user/sobre"}
+            href={"/sobre"}
             className="transition-all nav-links pb-1 hover:text-black"
           >
             Sobre Nós
           </Link>
         </nav>
         <Link
-          href={"/auth/cadastro"}
+          href={"auth/cadastro"}
           className="max-sm:w-[105px] max-sm:h-[33px] | sm:w-[145px] sm:h-[42px] | lg:text-[19px] lg:w-[190px] | xl:text-[20px] xl:w-[190px] xl:h-[55px] | text-[16px]"
         >
           <button className="w-full h-full bg-secondary-cadmium-green transition-all hover:scale-105 hover:bg-selected-secondary font-semi-bold uppercase rounded-normal text-primary-duch-white">
