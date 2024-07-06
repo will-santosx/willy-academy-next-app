@@ -3,8 +3,8 @@ import nookies from "nookies";
 import dotenv from "dotenv";
 
 dotenv.config();
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const API_URL = process.env.API_URL;
+const API_KEY = process.env.API_KEY;
 
 interface newUser {
   name: string;
