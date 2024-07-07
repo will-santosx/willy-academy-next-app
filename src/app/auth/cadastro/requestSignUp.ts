@@ -28,7 +28,7 @@ interface signUpResponse {
 export default async function newUserRequest(user: newUser) {
   const request = await axios
     .post(
-      String(API_URL),
+      String(API_URL + "/auth/sign-up"),
       {
         nome: user.name,
         sobrenome: user.lastName,
