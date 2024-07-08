@@ -61,7 +61,7 @@ export default function Header() {
           </Link>
         </nav>
         <Link
-          href={"auth/cadastro"}
+          href={"/auth/entrar"}
           className="max-sm:w-[105px] max-sm:h-[33px] | sm:w-[145px] sm:h-[42px] | lg:text-[19px] lg:w-[190px] | xl:text-[20px] xl:w-[190px] xl:h-[55px] | text-[16px]"
         >
           <button className="w-full h-full bg-secondary-cadmium-green transition-all hover:scale-105 hover:bg-selected-secondary font-semi-bold uppercase rounded-normal text-primary-duch-white">

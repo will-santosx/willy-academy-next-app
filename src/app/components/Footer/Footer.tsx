@@ -11,7 +11,7 @@ export default function Footer() {
           src={LogoPrimaryHorizontal}
           className="lg:w-[404px]"
         />
-        <nav className=" text-primary-duch-white font-medium text-normal-text flex lg:gap-[56px]">
+        <nav className=" text-primary-duch-white font-medium text-normal flex lg:gap-[56px]">
           <Link href={"#"}>Repositório</Link>
           <Link href={"#"}>GitHub</Link>
           <Link href={"#"}>Instagram</Link>
@@ -19,7 +19,7 @@ export default function Footer() {
         </nav>
       </div>
       <div className="bg-[#FF9900] lg:h-50px w-full text-neutral-rich-black text-center">
-        <span className="font-medium text-normal-text">
+        <span className="font-medium text-normal">
           IN PROGRESS BY WILLIANS SANTOS.
         </span>
       </div>

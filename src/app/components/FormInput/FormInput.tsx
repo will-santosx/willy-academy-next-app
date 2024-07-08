@@ -35,7 +35,7 @@ export default function FormInput(props: inputProps) {
       </label>
       <div
         title={props.label}
-        className="xl:h-[55px] | md:h-[50px] | bg-neutral-rich-black flex items-center justify-end border-2 rounded-normal border-transparent empty:border-transparent focus-within:border-primary-duch-white group-invalid:border-input-error"
+        className="xl:h-[55px] | md:h-[50px] w-full | bg-neutral-rich-black flex items-center justify-end border-2 rounded-normal border-transparent empty:border-transparent focus-within:border-primary-duch-white group-invalid:border-input-error"
       >
         <input
           className="flex-1 outline-none bg-transparent relative p-2 rounded-normal text-neutral-bright-gray placeholder:text-neutral-bright-gray text-[14px]"

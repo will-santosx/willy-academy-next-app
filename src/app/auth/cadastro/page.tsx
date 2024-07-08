@@ -140,7 +140,10 @@ export default function FormPage() {
                   </button>
                   <span className="text-neutral-bright-gray text-[14px] text-center">
                     Já tem uma conta?{" "}
-                    <Link className="underline font-medium" href={"./"}>
+                    <Link
+                      className="underline font-medium"
+                      href={"/auth/entrar"}
+                    >
                       Acesse por aqui.
                     </Link>
                   </span>
