@@ -154,7 +154,7 @@ export default function FormPage() {
                 <Link
                   className="underline font-medium"
                   target="_blank"
-                  href={"#"}
+                  href={"/politicas/termos"}
                 >
                   Termos de Uso
                 </Link>{" "}
@@ -162,7 +162,7 @@ export default function FormPage() {
                 <Link
                   className="underline font-medium"
                   target="_blank"
-                  href={"#"}
+                  href={"/politicas/politicas-privacidade"}
                 >
                   Políticas de Privacidade
                 </Link>
