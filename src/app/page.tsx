@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { FeatureCard } from "./components/FeatureCards/FeatureCards";
 import { BiBrain, BiLaptop, BiTrendingUp, BiTrophy } from "react-icons/bi";
+import Image from "next/image";
+import PrimaryIcon from "@/app/assets/brand/logo-primary-icon.png";
 
 export default function Home() {
   return (
-    <main className="w-full flex items-center flex-col bg-neutral-bright-gray">
+    <main className="w-full flex items-center flex-col gap-[3rem] bg-neutral-bright-gray">
       <section className="xl:h-[685px] xl:px-[167px] xl:py-[60px] | sm:bg-lg-top-image-banner | sm:h-[430px] sm:justify-between sm:py-[40px] sm:px-[30px] | max-sm:items-center max-sm:justify-end max-sm:py-[20px] max-sm:gap-[30px] | | h-[470px] w-full flex flex-col bg-cover bg-center bg-sm-top-image-banner">
         <div className="sm:justify-center sm:text-left sm:items-start sm:gap-[40px] | max-sm:gap-[20px] | lg:gap-[48px] | text-neutral-bright-gray flex flex-col items-center text-center justify-end">
           <div className="flex flex-col">
@@ -85,6 +87,26 @@ export default function Home() {
             }
             title="Seus Resultados"
             description="Acompanhe seu progresso em tempo real com nossas ferramentas avançadas."
+          />
+        </div>
+      </section>
+      <section className="xl:px-[150px] 2xl:px-[350px] xl:py-[35px] md:px-[60px] lg:px-[100px] px-[20px] py-[20px] w-full bg-secondary-cadmium-green gap-5 md:flex-row flex-col-reverse justify-between flex items-center">
+        <div className="text-neutral-bright-gray flex flex-col gap-3">
+          <h3 className="xl:max-w-[555px] xl:text-[40px] md:text-[32px] md:max-w-[400px] md:text-start text-center text-[20px] font-bold">
+            Nossa plataforma te prepara seja qual for o seu objetivo.
+          </h3>
+          <p className="xl:max-w-[645px] xl:text-[24px] md:max-w-[500px] lg:text-[20px] sm:text-[18px] md:text-start font-medium text-[14px] text-center">
+            Acessando nossa plataforma, você terá acesso completo aos materiais
+            preparatórios, podendo começar sua jornada de estudos de qualquer
+            lugar ou explorar todos os conteúdos livremente, construindo seu
+            próprio plano de aprendizado personalizado.
+          </p>
+        </div>
+        <div>
+          <Image
+            alt={"Logo Willy Academy Primário"}
+            className="xl:w-[284px] lg:w-[190px] md:w-[160px] w-[100px] md:block"
+            src={PrimaryIcon}
           />
         </div>
       </section>
