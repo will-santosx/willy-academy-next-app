@@ -4,22 +4,53 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-rich-black w-full lg:h-[594px] flex justify-end flex-col items-center">
-      <div className="lg:px-[160px] lg:h-[546px] w-full flex items-center flex-col justify-center lg:gap-[145px]">
+    <footer className="bg-neutral-rich-black w-full min-h-[350px] flex flex-col justify-center items-center relative">
+      <div className="lg:px-[160px] px-[20px] gap-[40px] h-full lg:h-[546px] w-full flex items-center flex-col justify-center lg:gap-[145px]">
         <Image
           alt="Logo da Willy Academy no Sentido Horizontal."
           src={LogoPrimaryHorizontal}
-          className="lg:w-[404px]"
+          className="lg:w-[404px] w-[170px] sm:w-[230px]"
         />
-        <nav className=" text-primary-duch-white font-medium text-normal flex lg:gap-[56px]">
-          <Link href={"#"}>Repositório</Link>
-          <Link href={"#"}>GitHub</Link>
-          <Link href={"#"}>Instagram</Link>
-          <Link href={"#"}>LinkedIn</Link>
-        </nav>
+        <div className="flex flex-col gap-[20px]">
+          <nav className="text-primary-duch-white font-semibold text-center sm:text-[20px]">
+            <span>willy.academy@proton.me</span>
+          </nav>
+          <nav className=" text-primary-duch-white font-medium flex-col sm:flex-row text-center gap-[15px] underline flex lg:gap-[56px]">
+            <Link
+              className="text-[14px] sm:text-[20px]"
+              target="_blank"
+              href={"https://github.com/will-santosx/willy-academy-next-app"}
+            >
+              Repositório
+            </Link>
+            <Link
+              target="_blank"
+              className="text-[14px] sm:text-[20px]"
+              href={"https://github.com/will-santosx"}
+            >
+              GitHub
+            </Link>
+            <Link
+              target="_blank"
+              className="text-[14px] sm:text-[20px]"
+              href={"https://www.instagram.com/leao.willians/"}
+            >
+              Instagram
+            </Link>
+            <Link
+              target="_blank"
+              className="text-[14px] sm:text-[20px]"
+              href={
+                "https://www.linkedin.com/in/david-willians-dos-santos-212932254/"
+              }
+            >
+              LinkedIn
+            </Link>
+          </nav>
+        </div>
       </div>
-      <div className="bg-[#FF9900] lg:h-50px w-full text-neutral-rich-black text-center">
-        <span className="font-medium text-normal">
+      <div className="bg-[#FF9900] lg:h-50px h-[30px] absolute top-[100%] w-full text-neutral-rich-black">
+        <span className="font-medium text-[15px] flex h-full items-center justify-center">
           IN PROGRESS BY WILLIANS SANTOS.
         </span>
       </div>
