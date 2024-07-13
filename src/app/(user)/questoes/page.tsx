@@ -10,8 +10,8 @@ export default function QuestionsPage() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   return (
     <main className="flex flex-col gap-[5rem]">
-      <section className="flex items-center lg:gap-[6rem] gap-[4rem] text-center font-medium flex-col w-full text-neutral-rich-black">
-        <div className="flex flex-col lg:flex-row gap-[4rem] items-center">
+      <section className="flex items-center xl:gap-[10rem] lg:gap-[6rem] gap-[4rem] text-center font-medium flex-col w-full text-neutral-rich-black">
+        <div className="flex flex-col lg:flex-row gap-[4rem] items-center w-full justify-between">
           <div className="flex flex-col lg:gap-7 gap-5 items-center lg:items-start lg:text-start">
             <div>
               <h1 className="uppercase text-[24px] md:text-[30px] xl:text-[33px] font-bold">
@@ -27,7 +27,7 @@ export default function QuestionsPage() {
           </div>
           <Image
             alt="Ilustração de um grupo de estudantes"
-            className="w-[300px] md:w-[380px] lg:w-[350px] xl:w-[400px] 2xl:w-[450px]"
+            className="w-[300px] md:w-[380px] lg:w-[350px] xl:w-[400px] 2xl:w-[550px]"
             src={VectorImage}
           />
         </div>
