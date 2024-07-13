@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={poppins.className}>
+      <body className={poppins.className + " bg-neutral-bright-gray"}>
         <Header />
         <main className={poppins.className + " bg-neutral-bright-gray"}>
           {children}

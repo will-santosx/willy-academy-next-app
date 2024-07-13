@@ -15,6 +15,8 @@
   "dependencies": {
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
+    "embla-carousel-autoplay": "^8.1.6",
+    "embla-carousel-react": "^8.1.6",
     "next": "14.2.4",
     "nookies": "^2.5.2",
     "react": "^18",
